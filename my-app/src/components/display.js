@@ -8,8 +8,8 @@ export const Display = ({ getName, name }) => {
 
     return (
         <>
-      Name: { name }
-      <button onClick={console.log(getName)}> Click me</button>
+      Name: { name } <br />
+      <button onClick={getName}> Click me</button>
         </>
     )
 
