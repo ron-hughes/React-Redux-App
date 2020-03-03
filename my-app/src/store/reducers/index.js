@@ -1,6 +1,7 @@
 import { GET_NAME } from '../actions';
+
 const initialState = {
-    name: null,
+    name: "",
 
 }
 
