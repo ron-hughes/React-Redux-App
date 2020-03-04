@@ -1,7 +1,9 @@
-import { GET_NAME } from '../actions';
+import { GET_NAME, GET_IMG } from '../actions';
 
 const initialState = {
-    name: "",
+    name: null,
+    img: null
+    
 
 }
 
@@ -12,6 +14,11 @@ export const reducer = ( state = initialState, action) => {
             return {
                 ...state,
                 name: action.payload
+            }
+        case GET_IMG:
+            return {
+                ...state,
+                img: action.payload
             }
         default:
             return state
